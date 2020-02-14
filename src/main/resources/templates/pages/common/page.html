@@ -17,10 +17,11 @@
 	});
 	//初始化页面分页信息
 	function doSetPagination(pageObject){
-		//console.log("pageObject",pageObject)
+		console.log("pageObject",pageObject)
 		//$(".xxx")基于css中的类选择器获取html中的对象
 		//html()函数用于向指定对象内部添加内容
 		$(".rowCount").html("总记录数("+pageObject.rowCount+")");
+		console.log("pagerowCount="+pageObject.rowCount)
 		$(".pageCount").html("总页数("+pageObject.pageCount+")");
 		$(".pageCurrent").html("当前页("+pageObject.pageCurrent+")");
 		//存储pageCurrent,pageCount值,借助data函数实现

@@ -121,7 +121,7 @@
 		$.post(url,params,function(result){
 			if(result.state==1){
 				alert(result.message);
-				//doGetObjects();
+
 				doRefreshAfterDelete();
 			}else{
 				alert(result.message);
@@ -130,10 +130,13 @@
 	}
 	//定义删除以后的刷新操作(重点是业务分析)
 	function doRefreshAfterDelete(){
+		doGetObjects();
+		debugger
 		//1.获取当前页码值,总页数
 		//data(key[,value])
 		var pageCurrent=$("#pageId").data("pageCurrent");
 		var pageCount=$("#pageId").data("pageCount");
+		var rowCount=$("#pageId").data("rowCount");
 		//2.获取Thead中checkbox对象的状态
 		var isCheckedAll=$("#checkAll").prop("checked");
 		//3.基于条件修改当前页码值并重新查询
@@ -150,18 +153,23 @@
 			return;
 		}else if(!isCheckedAll&&isLastPage){
 			var rowCount=$("#pageId").data("rowCount");
+			console.log("rowcount="+rowCount)
 			$("#tbodyId input[type='checkbox']")
 					.each(function(){
 						if($(this).prop("checked")){
 							$(this).parents("tr").remove();
 							rowCount--;
+							console.log(rowCount)
 						}
 					})
+
 			$(".rowCount").html("总记录数("+rowCount+")");
+			console.log("rowcount1="+rowCount)
 			$("#pageId").data("rowCount",rowCount);
+			console.log("rowcount2="+rowCount)
 			return;
 		}
-		doGetObjects();
+
 	}
 	//基于条件查询日志信息
 	function doQueryObjects(){
@@ -218,7 +226,7 @@
 	}
 	//创建当前行的td对象
 	function doCreateTds(row){
-		console.log("row",row);
+		// console.log("row",row);
 		var tds=
 				"<td><input type='checkbox' class='cBox' value='"+row.id+"'></td>"+
 				"<td>"+row.username+"</td>"+
