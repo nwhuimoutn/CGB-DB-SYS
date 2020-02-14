@@ -29,4 +29,4 @@ logging:
 
 #page 自己定义的参数 经常变化的数字
 db.page:
-    pageSize: 3
+    pageSize: 15
