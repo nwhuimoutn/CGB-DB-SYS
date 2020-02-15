@@ -14,7 +14,7 @@ public class PageObject<T> implements Serializable {
     private Integer pageSize=3;   //页面显示几条记录
     private Integer rowCount=0;   //总行数(通过查询获得)
     private Integer pageCount=0;  //总页数(通过计算获得)
-    private List<T> records;      //当前页数
+    private List<T> records;      //记录页数
 
     public PageObject(Integer pageCurrent, Integer pageSize, Integer rowCount, List<T> records) {
         this.pageCurrent = pageCurrent;
