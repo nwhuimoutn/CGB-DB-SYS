@@ -15,6 +15,13 @@ public class SysMenuController {
     @Autowired
     SysMenuService sysMenuService;
 
+
+    @RequestMapping("doDeleteObject")
+    public JsonResult doDeleteObject(Integer id){
+        sysMenuService.deleteObject(id);
+        return new JsonResult("delete ok");
+    }
+
     @RequestMapping("doFindObjects")
     public JsonResult doFindObjects(){
         List<Map<String, Object>> objects = sysMenuService.findObjects();
