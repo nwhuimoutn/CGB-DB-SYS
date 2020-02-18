@@ -26,6 +26,7 @@ public class SysLogServiceImpl implements SysLogService {
         //1.参数校验
         //1.1验证pageCurrent  调用的配置类方法
         //spring提供了一个配置方法类 Assert
+        System.out.println("pageCurrent==="+pageCurrent);
         PageUtil.isValid(pageCurrent);
 //        Assert.isTrue(pageCurrent==null&&pageCurrent>=1,
 //                "页面错误");

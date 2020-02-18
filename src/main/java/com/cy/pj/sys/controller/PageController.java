@@ -30,6 +30,20 @@ public class PageController {
         return "common/page";
     }
 
+    //菜单管理
+    @RequestMapping("menu/menu_list")
+    public String doMenuUI(){
 
+        return "sys/menu_list";
+    }
+
+    //共性抽取
+    //rest风格(编码风格)的URL映射  {}为rest表达式
+    //@PathVariable 告诉mvc参数从URL中获取
+//    @RequestMapping("{module}/{moduleUI}")
+//    public String doModule( @PathVariable String moduleUI){
+//
+//        return "sys/"+moduleUI;
+//    }
 
 }
