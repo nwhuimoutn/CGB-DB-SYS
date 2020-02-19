@@ -16,4 +16,22 @@
         as  parentName from sys_menus as c
     </select>
 
+
+    <!-- 上级菜单查询   -->
+    <select id="findZtreeMenuNodes"
+            resultType="com.cy.pj.common.vo.Node">
+        select id,name,parentId from sys_menus;
+    </select>
+
+    <insert id="insertObject"
+            parameterType="com.cy.pj.sys.entity.SysmMenu">
+        insert into sys_menus
+        (name,url,type,sort,note,parentId,permission,
+         createdTime,modifiedTime,createdUser,modifiedUser)
+        values
+       (#{name},#{url},#{type},#{sort},#{note},#{parentId},
+         #{permission},now(),now(),#{createdUser},#{modifiedUser})
+
+    </insert>
+
 </mapper>

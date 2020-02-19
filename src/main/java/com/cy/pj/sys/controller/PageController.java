@@ -1,6 +1,7 @@
 package com.cy.pj.sys.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.concurrent.atomic.AtomicLong;
@@ -19,31 +20,32 @@ public class PageController {
         System.out.println( "访问次数="+ al.incrementAndGet());
         return "starter";
     }
-    //访问日志管理模块
-    @RequestMapping("log/log_list")
-    public String doLogUI() {
-        return "sys/log_list";
-    }
-    //分页
-    @RequestMapping("doPageUI")
-    public String doPageUI() {
-        return "common/page";
-    }
-
-    //菜单管理
-    @RequestMapping("menu/menu_list")
-    public String doMenuUI(){
-
-        return "sys/menu_list";
-    }
+//    //访问日志管理模块
+//    @RequestMapping("log/log_list")
+//    public String doLogUI() {
+//        return "sys/log_list";
+//    }
+//    //分页
+//    @RequestMapping("doPageUI")
+//    public String doPageUI() {
+//        return "common/page";
+//    }
+//
+//    //菜单管理
+//    @RequestMapping("menu/menu_list")
+//    public String doMenuUI(){
+//
+//        return "sys/menu_list";
+//    }
 
     //共性抽取
     //rest风格(编码风格)的URL映射  {}为rest表达式
-    //@PathVariable 告诉mvc参数从URL中获取
-//    @RequestMapping("{module}/{moduleUI}")
-//    public String doModule( @PathVariable String moduleUI){
-//
-//        return "sys/"+moduleUI;
-//    }
+    //@PathVariable
+   // 告诉mvc参数从URL中获取
+    @RequestMapping("{module}/{moduleUI}")
+    public String doModule( @PathVariable String moduleUI){
+
+        return "sys/"+moduleUI;
+    }
 
 }
