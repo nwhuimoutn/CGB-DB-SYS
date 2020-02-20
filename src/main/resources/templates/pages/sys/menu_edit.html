@@ -169,14 +169,36 @@
 	  //1.获取选中的节点对象
 	  var nodes=zTree.getSelectedNodes();
 	  if(nodes.length==1){	  
-       var node=nodes[0];
+       var selectedNode=nodes[0];
+
+       //判定选中的上级菜单 节点是否是当前修改节点的子节点
+        var rowData=  $("#mainContentId").data("rowData")
+          if(rowData){
+              var flag=isChild(rowData.id,selectedNode)
+              if(flag){
+                  alert("不能选择当前节点以及对应子节点")
+                  return
+              }
+          }
 	  //2.将对象中内容,填充到表单
-	   $("#parentId").data("parentId",node.id);
-	   $("#parentId").val(node.name);
+	   $("#parentId").data("parentId",selectedNode.id);
+	   $("#parentId").val(selectedNode.name);
       }
 	  //3.隐藏树对象
 	   doHideTree();
   }
+
+  //判定当前选择节点是否是当前节点的子节点
+  function isChild(currentNodeId,selectNode) {
+      if(selectNode.id==currentNodeId)return true
+      if (selectNode.parentId==currentNodeId)return true
+      var node=selectNode.getParentNode();
+      if(!node)return false
+      return isChild(currentNodeId,node)
+
+
+  }
+
 
   function doLoadZtreeNodes(){
 	  var url="menu/doFindZtreeMenuNodes";
@@ -188,6 +210,16 @@
 					  $("#menuTree"),
 					  setting,
 					  result.data);//id,name,parentId
+
+              //判断是否是修改,如果是从zTree中移除当前菜单以及对应的子菜单
+              // var  rowData=$("#mainContentId").data("rowData")
+              // if(rowData){//rowData有值,表示修改
+              //    //获取当前的菜单对象
+              //   var node=  zTree.getNodeByParam("id",rowData.id,null)
+              //     //移除当前菜单
+              //   zTree.removeNode(node)
+              // }
+              //显示Ztree对应的div
 	           $("#menuLayer").css("display","block");
 		  }else{
 			  alert(result.message);

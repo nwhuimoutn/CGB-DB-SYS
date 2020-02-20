@@ -11,11 +11,17 @@ import java.util.Map;
 
 @Mapper
 public interface SysMenuDao {
+
+     /**
+      * 修改
+      * @param entity
+      * @return
+      */
+     int updateObject(SysmMenu entity);
      /**
       * 插入子表字段
       * @return
       */
-
        int insertObject(SysmMenu entity);
 
      /**

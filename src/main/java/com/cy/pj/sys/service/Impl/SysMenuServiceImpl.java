@@ -21,8 +21,28 @@ public class SysMenuServiceImpl implements SysMenuService {
     @Autowired
     SysRoleMenuDao sysRoleMenuDao;
 
+    //修改
+    @Override
+    public int updateObject(SysmMenu entity) {
+        //1.参数校验
+        if(entity==null)throw new IllegalArgumentException("保存对象不能为空");
+        if(StringUtils.isEmpty(entity.getName()))
+            throw new IllegalArgumentException("菜单名不能为空");
+        int rows;
+        //2.保存数据
+        try{
+            rows=sysMenuDao.insertObject(entity);
+        }catch(Exception e){
+            e.printStackTrace();
+            throw new ServiceException("保存失败");
+        }
+        return rows;
+
+    }
+
 
     //添加
+//    @Transactional
     @Override
     public int insertObject(SysmMenu entity) {
         //1.参数校验

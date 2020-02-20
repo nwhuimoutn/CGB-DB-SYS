@@ -16,6 +16,12 @@ public class SysMenuController {
     @Autowired
     SysMenuService sysMenuService;
 
+    @RequestMapping("doUpdateObject")
+    public JsonResult doUpdateObject(SysmMenu entity){
+        sysMenuService.updateObject(entity);
+        return new JsonResult("添加成功");
+    }
+
     @RequestMapping("doSaveObject")
     public JsonResult doInsertObject(SysmMenu entity){
             sysMenuService.insertObject(entity);

@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 public interface SysMenuService {
+    int updateObject(SysmMenu entity);
+
     int insertObject(SysmMenu entity);
 
     List<Node> findZtreeMenuNodes();
