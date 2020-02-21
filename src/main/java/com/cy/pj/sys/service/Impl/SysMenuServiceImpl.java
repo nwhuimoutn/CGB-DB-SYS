@@ -31,7 +31,7 @@ public class SysMenuServiceImpl implements SysMenuService {
         int rows;
         //2.保存数据
         try{
-            rows=sysMenuDao.insertObject(entity);
+            rows=sysMenuDao.updateObject(entity);
         }catch(Exception e){
             e.printStackTrace();
             throw new ServiceException("保存失败");

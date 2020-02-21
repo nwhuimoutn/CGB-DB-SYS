@@ -1,4 +1,4 @@
-package com.cy.pj.sys.log;
+package com.cy.pj.sys;
 
 import com.cy.pj.common.vo.PageObject;
 import com.cy.pj.sys.entity.SysLog;

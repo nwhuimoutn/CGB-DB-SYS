@@ -170,7 +170,6 @@
 	  var nodes=zTree.getSelectedNodes();
 	  if(nodes.length==1){	  
        var selectedNode=nodes[0];
-
        //判定选中的上级菜单 节点是否是当前修改节点的子节点
         var rowData=  $("#mainContentId").data("rowData")
           if(rowData){
@@ -195,8 +194,6 @@
       var node=selectNode.getParentNode();
       if(!node)return false
       return isChild(currentNodeId,node)
-
-
   }
 
 
@@ -229,7 +226,8 @@
 
  </script>
     
-    
+
+
     
     
     

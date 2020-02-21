@@ -19,7 +19,7 @@ public class SysMenuController {
     @RequestMapping("doUpdateObject")
     public JsonResult doUpdateObject(SysmMenu entity){
         sysMenuService.updateObject(entity);
-        return new JsonResult("添加成功");
+        return new JsonResult("修改成功");
     }
 
     @RequestMapping("doSaveObject")

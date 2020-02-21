@@ -26,10 +26,10 @@ public class PageController {
 //        return "sys/log_list";
 //    }
 //    //分页
-//    @RequestMapping("doPageUI")
-//    public String doPageUI() {
-//        return "common/page";
-//    }
+    @RequestMapping("doPageUI")
+    public String doPageUI() {
+        return "common/page";
+    }
 //
 //    //菜单管理
 //    @RequestMapping("menu/menu_list")
