@@ -1,5 +1,6 @@
 package com.cy.pj.sys.dao;
 
+import com.cy.pj.common.vo.SysRoleMenuVo;
 import com.cy.pj.sys.entity.SysRole;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
@@ -19,4 +20,8 @@ public interface SysRoleDao {
 
      @Delete("delete from sys_roles where id=#{id}")
      int deleteObject(Integer id);
+
+     int insertObject(SysRole entity);
+
+     SysRoleMenuVo findObjectById(Integer id);
 }

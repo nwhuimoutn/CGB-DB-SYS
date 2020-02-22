@@ -11,6 +11,7 @@ import com.cy.pj.sys.entity.SysRole;
 import com.cy.pj.sys.service.SysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
@@ -54,4 +55,15 @@ public class SysRoleServiceImpl implements SysRoleService {
         if(row==0)throw new ServiceException("删除记录不存在");
         return row;
     }
+
+    @Override
+    public int saveObject(SysRole entity, Integer[] menuIds) {
+        if(entity==null)throw new IllegalArgumentException("保存对象不能为空");
+        if(StringUtils.isEmpty(entity.getName()))
+            throw new IllegalArgumentException("角色名不能为空");
+        int row =  sysRoleDao.insertObject(entity);
+       sysRoleMenuDao.insertObjects(entity.getId(), menuIds);
+        return row;
+    }
+
 }

@@ -90,6 +90,7 @@
 	   var id=$(this).parents("tr").data("id");
 	   var params={"id":id};
 	   //2.url
+	   if(!confirm("确认删除吗"))return;
 	   var url="role/doDeleteObject"
 	   //3.ajax request
 	   $.post(url,params,function(result){

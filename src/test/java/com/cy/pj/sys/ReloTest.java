@@ -1,5 +1,6 @@
 package com.cy.pj.sys;
 
+import com.cy.pj.common.vo.SysRoleMenuVo;
 import com.cy.pj.sys.dao.SysRoleDao;
 import com.cy.pj.sys.entity.SysRole;
 import lombok.extern.slf4j.Slf4j;
@@ -26,5 +27,10 @@ public class ReloTest {
         List<SysRole> page = sysRoleDao.findPageObject("运维", 0, 5);
         page.forEach((a)->log.info(a.toString()));
 
+    }
+    @Test
+    public void  findObjectMenuRoleTest(){
+        SysRoleMenuVo objectById = sysRoleDao.findObjectById(1);
+        System.out.println(objectById);
     }
 }

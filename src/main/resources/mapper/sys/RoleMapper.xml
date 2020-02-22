@@ -22,8 +22,35 @@
         <include refid="queryWhereId"/>
         order by createdTime desc limit #{startIndex},#{pageSize}
     </select>
+     <!--持久化自身信息
+       useGeneratedKeys表示使用insert操作执行以后的主键值
+       keyProperty 表示将主键赋值给参数对象SysRole的id属性
+     -->
+    <insert id="insertObject"
+            parameterType="com.cy.pj.sys.entity.SysRole"
+            useGeneratedKeys="true"
+            keyProperty="id">
+        <!--  这种形式 更加灵活
+              <selectKey keyProperty="id" resultType="int" order="AFTER">
+                    select last_insert_id()
+              </selectKey>
+              -->
+                insert into sys_roles(name,note,createdTime,modifiedTime,createdUser,modifiedUser)
+                values (#{name},#{note},now(),now(),#{createdUser},#{modifiedUser})
+            </insert>
+    <!--当需要进行自定义映射时,可以考虑使用resultMap-->
+<!--    <id column="id" property="id"/>  关联嵌套使用的id 再次查询-->
+    <resultMap id="sysRoleMenuVo" type="com.cy.pj.common.vo.SysRoleMenuVo">
+        <id column="id" property="id"/>
+        <!--一对多关联查询或嵌套查询-->
+        <collection property="menuIds" column="id"
+        select="com.cy.pj.sys.dao.SysRoleMenuDao.findMenuIdsByRoleId" >
+        </collection>
 
+    </resultMap>
 
-
-
+       <select id="findObjectById"
+               resultMap="sysRoleMenuVo">
+           select id,name,note from sys_roles where id=#{id}
+       </select>
 </mapper>

@@ -1,6 +1,7 @@
 package com.cy.pj.sys.controller;
 
 import com.cy.pj.common.vo.JsonResult;
+import com.cy.pj.sys.entity.SysRole;
 import com.cy.pj.sys.service.SysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,5 +22,9 @@ public class SysRoleController {
         sysRoleService.deleteObject(id);
         return new JsonResult("删除成功");
     }
-
+    @RequestMapping("doSaveObject")
+     public JsonResult doSaveObject(SysRole entity ,Integer[] menuIds){
+  sysRoleService.saveObject(entity,menuIds);
+         return new JsonResult("添加成功");
+     }
 }
