@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7993a43f-25bd-4de3-9935-3c79a47c1fc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/common/vo/SysRoleMenuVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/controller/SysDeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysDeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/entity/SysDept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/Impl/SysDeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/SysDeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/sys/RoleMenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/sys/SysDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/common/vo/CheckBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/common/vo/SysUserDeptVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/controller/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/Impl/SysUserSerivceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/SysUserSerivce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/sys/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cy/pj/sys/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cy/pj/common/vo/SysRoleMenuVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/common/vo/SysRoleMenuVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/controller/SysRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysDeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysDeptDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysRoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysRoleMenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/dao/SysRoleMenuDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/Impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/Impl/SysRoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cy/pj/sys/service/SysRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/sys/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/sys/RoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/starter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/starter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cy/pj/sys/ReloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cy/pj/sys/ReloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/sys/role_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/sys/role_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/sys/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/sys/user_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/starter.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/starter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/sys/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/sys/user_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="mapper.xml" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -87,7 +91,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1XTFXptmr5YEpVrlBjHBs1QTajx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -151,22 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogDaoTest.sysLogDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CGB-DB-SYS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cy.pj.sys.log.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cy.pj.sys.log" />
-      <option name="MAIN_CLASS_NAME" value="com.cy.pj.sys.log.LogDaoTest" />
-      <option name="METHOD_NAME" value="sysLogDaoTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReloTest.findObjectMenuRoleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CGB-DB-SYS" />
       <extension name="coverage">
@@ -215,17 +205,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="servicePageTest.PageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.userTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CGB-DB-SYS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cy.pj.sys.log.*" />
+          <option name="PATTERN" value="com.cy.pj.sys.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cy.pj.sys.log" />
-      <option name="MAIN_CLASS_NAME" value="com.cy.pj.sys.log.servicePageTest" />
-      <option name="METHOD_NAME" value="PageTest" />
+      <option name="PACKAGE_NAME" value="com.cy.pj.sys" />
+      <option name="MAIN_CLASS_NAME" value="com.cy.pj.sys.UserTest" />
+      <option name="METHOD_NAME" value="userTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.userTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CGB-DB-SYS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cy.pj.sys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cy.pj.sys" />
+      <option name="MAIN_CLASS_NAME" value="com.cy.pj.sys.UserTest" />
+      <option name="METHOD_NAME" value="userTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -306,21 +312,21 @@
     <list>
       <item itemvalue="Application.application" />
       <item itemvalue="JUnit.LogDaoTest.findLogObjectTest" />
-      <item itemvalue="JUnit.LogDaoTest.sysLogDaoTest" />
-      <item itemvalue="JUnit.servicePageTest.PageTest" />
       <item itemvalue="JUnit.ReloTest.reloTest" />
       <item itemvalue="JUnit.ReloTest.reloObjcet" />
+      <item itemvalue="JUnit.ReloTest.findObjectMenuRoleTest" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.50" />
-      <item itemvalue="JUnit.ReloTest.findObjectMenuRoleTest" />
+      <item itemvalue="JUnit.UserTest.userTest" />
+      <item itemvalue="JUnit.UserTest.userTest2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.userTest2" />
+        <item itemvalue="JUnit.UserTest.userTest" />
         <item itemvalue="JUnit.ReloTest.findObjectMenuRoleTest" />
         <item itemvalue="JUnit.ReloTest.reloObjcet" />
         <item itemvalue="JUnit.ReloTest.reloTest" />
-        <item itemvalue="JUnit.servicePageTest.PageTest" />
-        <item itemvalue="JUnit.LogDaoTest.sysLogDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -375,7 +381,8 @@
       <workItem from="1582090122498" duration="14544000" />
       <workItem from="1582168297795" duration="7579000" />
       <workItem from="1582248539245" duration="20311000" />
-      <workItem from="1582340078193" duration="7795000" />
+      <workItem from="1582340078193" duration="14047000" />
+      <workItem from="1582422636034" duration="19859000" />
     </task>
     <task id="LOCAL-00001" summary="误删文件添加">
       <created>1581668480172</created>
@@ -433,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582291366248</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="角色模块,修改页面数据呈现">
+      <created>1582375243814</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582375243814</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +471,8 @@
     <MESSAGE value="菜单查询,添加" />
     <MESSAGE value="菜单查询,修改" />
     <MESSAGE value="角色模块,查询和删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="角色模块,查询和删除" />
+    <MESSAGE value="角色模块,修改页面数据呈现" />
+    <option name="LAST_COMMIT_MESSAGE" value="角色模块,修改页面数据呈现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="903" y="329" width="816" height="678" key="#HTTP_Proxy" timestamp="1581173451922">
@@ -484,18 +499,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1126" y="365" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581664156764" />
-    <state x="866" y="299" key="#com.intellij.ide.util.MemberChooser" timestamp="1582293508374">
+    <state x="866" y="299" key="#com.intellij.ide.util.MemberChooser" timestamp="1582463047803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="866" y="299" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582293508374" />
+    <state x="866" y="299" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582463047803" />
     <state x="672" y="318" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581665001735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="318" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581665001735" />
-    <state x="891" y="128" key="CommitChangelistDialog2" timestamp="1582291361113">
+    <state x="891" y="128" key="CommitChangelistDialog2" timestamp="1582375239929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="891" y="128" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582291361113" />
+    <state x="891" y="128" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582375239929" />
     <state x="1203" y="280" key="FileChooserDialogImpl" timestamp="1582251943004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -512,54 +527,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1131" y="238" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581512736297" />
-    <state width="1038" height="210" key="GridCell.Tab.0.bottom" timestamp="1582374940850">
+    <state width="1050" height="277" key="GridCell.Tab.0.bottom" timestamp="1582462139591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582374940850" />
-    <state width="1038" height="210" key="GridCell.Tab.0.center" timestamp="1582374940850">
+    <state width="1050" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139591" />
+    <state width="1050" height="277" key="GridCell.Tab.0.center" timestamp="1582462139590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582374940850" />
-    <state width="1038" height="210" key="GridCell.Tab.0.left" timestamp="1582374940850">
+    <state width="1050" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139590" />
+    <state width="1050" height="277" key="GridCell.Tab.0.left" timestamp="1582462139590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582374940850" />
-    <state width="1038" height="210" key="GridCell.Tab.0.right" timestamp="1582374940850">
+    <state width="1050" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139590" />
+    <state width="1050" height="277" key="GridCell.Tab.0.right" timestamp="1582462139590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582374940850" />
-    <state width="1132" height="210" key="GridCell.Tab.1.bottom" timestamp="1582364929082">
+    <state width="1050" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139590" />
+    <state width="1050" height="277" key="GridCell.Tab.1.bottom" timestamp="1582462139591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1132" height="210" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582364929082" />
-    <state width="1132" height="210" key="GridCell.Tab.1.center" timestamp="1582364929082">
+    <state width="1050" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139591" />
+    <state width="1050" height="277" key="GridCell.Tab.1.center" timestamp="1582462139591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1132" height="210" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582364929082" />
-    <state width="1132" height="210" key="GridCell.Tab.1.left" timestamp="1582364929082">
+    <state width="1050" height="277" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139591" />
+    <state width="1050" height="277" key="GridCell.Tab.1.left" timestamp="1582462139591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1132" height="210" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582364929082" />
-    <state width="1132" height="210" key="GridCell.Tab.1.right" timestamp="1582364929082">
+    <state width="1050" height="277" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139591" />
+    <state width="1050" height="277" key="GridCell.Tab.1.right" timestamp="1582462139591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1132" height="210" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582364929082" />
-    <state width="936" height="238" key="GridCell.Tab.2.bottom" timestamp="1581489873134">
+    <state width="1050" height="277" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582462139591" />
+    <state width="1033" height="209" key="GridCell.Tab.2.bottom" timestamp="1582445783307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="238" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581489873134" />
-    <state width="936" height="238" key="GridCell.Tab.2.center" timestamp="1581489873134">
+    <state width="1033" height="209" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582445783307" />
+    <state width="1033" height="209" key="GridCell.Tab.2.center" timestamp="1582445783307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="238" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581489873134" />
-    <state width="936" height="238" key="GridCell.Tab.2.left" timestamp="1581489873134">
+    <state width="1033" height="209" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582445783307" />
+    <state width="1033" height="209" key="GridCell.Tab.2.left" timestamp="1582445783307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="238" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581489873134" />
-    <state width="936" height="238" key="GridCell.Tab.2.right" timestamp="1581489873134">
+    <state width="1033" height="209" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582445783307" />
+    <state width="1033" height="209" key="GridCell.Tab.2.right" timestamp="1582445783307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="238" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581489873134" />
+    <state width="1033" height="209" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582445783307" />
     <state x="956" y="188" key="Maven.ArtifactSearchDialog" timestamp="1582359448256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -576,10 +591,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1167" y="294" width="549" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1581386549639" />
-    <state x="845" y="266" key="Vcs.Push.Dialog.v2" timestamp="1582291395342">
+    <state x="845" y="266" key="Vcs.Push.Dialog.v2" timestamp="1582375311107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="845" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582291395342" />
+    <state x="845" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582375311107" />
     <state x="1048" y="115" width="741" height="838" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581133759937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -588,10 +603,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1048" y="115" width="741" height="838" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581133759937" />
-    <state x="1069" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1582340077993">
+    <state x="1069" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1582422644179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1069" y="362" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582340077993" />
+    <state x="1069" y="362" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582422644179" />
     <state x="1220" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581596752708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -629,6 +644,12 @@
           <line>131</line>
           <properties class="org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration" method="sqlSessionFactory" />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/templates/pages/sys/log_list.html</url>
+          <line>167</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

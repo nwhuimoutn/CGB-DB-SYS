@@ -27,4 +27,18 @@ public class SysRoleController {
   sysRoleService.saveObject(entity,menuIds);
          return new JsonResult("添加成功");
      }
+     @RequestMapping("doFindObjectById")
+     public  JsonResult doFindObjectById(Integer id){
+      ;
+         return new JsonResult(sysRoleService.findObjectById(id));
+     }
+     @RequestMapping("doUpdateObject")
+    public JsonResult doUpdateObject(SysRole entity ,Integer[] menuIds){
+        sysRoleService.updateObject(entity,menuIds);
+        return new JsonResult("更新成功");
+    }
+    @RequestMapping("doFindRoles")
+    public JsonResult doFindObjects() {
+        return new JsonResult(sysRoleService.findObjects());
+    }
 }

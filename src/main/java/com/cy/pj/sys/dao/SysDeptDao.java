@@ -1,13 +1,12 @@
 package com.cy.pj.sys.dao;
-import java.util.List;
-import java.util.Map;
-
+import com.cy.pj.common.vo.Node;
+import com.cy.pj.sys.entity.SysDept;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-import com.cy.pj.common.vo.Node;
-import com.cy.pj.sys.entity.SysDept;
+import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface SysDeptDao {
@@ -30,6 +29,7 @@ public interface SysDeptDao {
 	  @Delete("delete from sys_depts where id=#{id}")
 	  int deleteObject(Integer id);
 }
+
 
 
 

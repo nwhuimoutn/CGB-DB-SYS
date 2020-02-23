@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 public class SysRoleMenuVo implements Serializable {
+    private static final long serialVersionUID = -110349084248617484L;
     /**角色id*/
     private Integer id;
     /**角色名称*/
