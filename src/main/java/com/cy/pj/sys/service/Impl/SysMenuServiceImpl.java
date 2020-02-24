@@ -4,7 +4,7 @@ import com.cy.pj.common.exception.ServiceException;
 import com.cy.pj.common.vo.Node;
 import com.cy.pj.sys.dao.SysMenuDao;
 import com.cy.pj.sys.dao.SysRoleMenuDao;
-import com.cy.pj.sys.entity.SysmMenu;
+import com.cy.pj.sys.entity.SysMenu;
 import com.cy.pj.sys.service.SysMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,7 @@ public class SysMenuServiceImpl implements SysMenuService {
 
     //修改
     @Override
-    public int updateObject(SysmMenu entity) {
+    public int updateObject(SysMenu entity) {
         //1.参数校验
         if(entity==null)throw new IllegalArgumentException("保存对象不能为空");
         if(StringUtils.isEmpty(entity.getName()))
@@ -44,7 +44,7 @@ public class SysMenuServiceImpl implements SysMenuService {
     //添加
 //    @Transactional
     @Override
-    public int insertObject(SysmMenu entity) {
+    public int insertObject(SysMenu entity) {
         //1.参数校验
         if(entity==null)throw new IllegalArgumentException("保存对象不能为空");
         if(StringUtils.isEmpty(entity.getName()))

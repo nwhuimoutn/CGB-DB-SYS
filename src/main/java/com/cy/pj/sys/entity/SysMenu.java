@@ -10,7 +10,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SysmMenu implements Serializable {
+public class SysMenu implements Serializable {
 
     private static final long serialVersionUID = 2930533113724838477L;
 

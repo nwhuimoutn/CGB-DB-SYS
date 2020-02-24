@@ -2,15 +2,15 @@ package com.cy.pj.sys.service;
 
 
 import com.cy.pj.common.vo.Node;
-import com.cy.pj.sys.entity.SysmMenu;
+import com.cy.pj.sys.entity.SysMenu;
 
 import java.util.List;
 import java.util.Map;
 
 public interface SysMenuService {
-    int updateObject(SysmMenu entity);
+    int updateObject(SysMenu entity);
 
-    int insertObject(SysmMenu entity);
+    int insertObject(SysMenu entity);
 
     List<Node> findZtreeMenuNodes();
 

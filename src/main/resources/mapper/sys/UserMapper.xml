@@ -3,6 +3,42 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
 <mapper namespace="com.cy.pj.sys.dao.SysUserDao">
+
+    <update id="updateObject" parameterType="com.cy.pj.sys.entity.SysUser">
+        update sys_users
+        set username=#{username},
+            mobile=#{mobile},
+            email=#{email},
+            deptId=#{deptId},
+            modifiedTime=now(),
+            modifiedUser=#{modifiedUser}
+         where id=#{id}
+    </update>
+
+    <select id="findObjectById"
+            parameterType="int"
+            resultMap="sysUserDeptVo">
+        select * from sys_users
+        where id=#{id}
+    </select>
+
+    <!-- useGeneratedKeys="true"
+            keyProperty="id" 保存主键值-->
+
+    <insert id="insertObject"
+            parameterType="com.cy.pj.sys.entity.SysUser"
+            useGeneratedKeys="true"
+            keyProperty="id">
+      insert into sys_users
+      (username,password,deptId,email,mobile,salt,valid,
+      createdTime,modifiedTime,createdUser,modifiedUser)
+      values
+    (#{username},#{password},#{deptId},#{email},#{mobile},#{salt},#{valid},
+      now(),now(),#{createdUser},#{modifiedUser})
+   </insert>
+
+
+
     <sql id="queryWhereId">
         from sys_users
         <where>
@@ -35,4 +71,7 @@
                      select="com.cy.pj.sys.dao.SysDeptDao.findById">
         </association>
     </resultMap>
+
+
+
 </mapper>

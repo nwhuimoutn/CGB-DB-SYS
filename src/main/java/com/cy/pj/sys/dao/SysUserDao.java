@@ -1,6 +1,7 @@
 package com.cy.pj.sys.dao;
 
 import com.cy.pj.common.vo.SysUserDeptVo;
+import com.cy.pj.sys.entity.SysUser;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
@@ -29,4 +30,20 @@ public interface SysUserDao {
             @Param("username")String  username,
             @Param("startIndex")Integer startIndex,
             @Param("pageSize")Integer pageSize);
+
+    /**
+     * 持久化自身信息
+     * @param entity
+     * @return
+     */
+    int insertObject(SysUser entity);
+
+    /**
+     * 基于用户id查询相关数据
+     * @param id
+     * @return
+     */
+    SysUserDeptVo findObjectById(Integer id);
+
+    int updateObject(SysUser entity);
 }

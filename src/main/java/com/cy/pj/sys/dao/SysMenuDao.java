@@ -1,7 +1,7 @@
 package com.cy.pj.sys.dao;
 
 import com.cy.pj.common.vo.Node;
-import com.cy.pj.sys.entity.SysmMenu;
+import com.cy.pj.sys.entity.SysMenu;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -17,12 +17,12 @@ public interface SysMenuDao {
       * @param entity
       * @return
       */
-     int updateObject(SysmMenu entity);
+     int updateObject(SysMenu entity);
      /**
       * 插入子表字段
       * @return
       */
-       int insertObject(SysmMenu entity);
+       int insertObject(SysMenu entity);
 
      /**
       *  查询上级菜单相关信息

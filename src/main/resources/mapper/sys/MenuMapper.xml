@@ -24,7 +24,7 @@
     </select>
 
     <insert id="insertObject"
-            parameterType="com.cy.pj.sys.entity.SysmMenu">
+            parameterType="com.cy.pj.sys.entity.SysMenu">
         insert into sys_menus
         (name,url,type,sort,note,parentId,permission,
          createdTime,modifiedTime,createdUser,modifiedUser)
@@ -35,7 +35,7 @@
     </insert>
 
     <update id="updateObject"
-            parameterType="com.cy.pj.sys.entity.SysmMenu">
+            parameterType="com.cy.pj.sys.entity.SysMenu">
     update sys_menus
     set
            name=#{name},
